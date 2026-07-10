@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>気圧手帳 プライバシーポリシー</title>
+<meta name="description" content="iOSアプリ「気圧手帳」のプライバシーポリシー。個人情報の収集は行わず、すべてのデータは端末内で完結します。">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #F7F7F5;
+  --surface: #FFFFFF;
+  --fg: #1A1A18;
+  --muted: #55554F;
+  --border: #E4E4DF;
+  --accent: #0F766E;
+  --space-1: 8px; --space-2: 16px; --space-3: 24px;
+  --space-4: 32px; --space-5: 48px; --space-6: 64px;
+  --radius-md: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #15150F;
+    --surface: #1E1E18;
+    --fg: #F2F2EC;
+    --muted: #B4B4AA;
+    --border: #33332B;
+    --accent: #2DD4BF;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+main {
+  max-width: 65ch;
+  margin-inline: auto;
+  padding: var(--space-4) var(--space-3) var(--space-6);
+}
+h1 {
+  font-size: 25px;
+  line-height: 1.3;
+  margin: 0 0 var(--space-1);
+}
+h2 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin: var(--space-5) 0 var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+}
+p, ul { margin: 0 0 var(--space-2); }
+ul { padding-left: 1.4em; }
+li { margin-bottom: var(--space-1); }
+a { color: var(--accent); text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.meta { color: var(--muted); font-size: 14px; margin-bottom: var(--space-4); }
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+}
+footer {
+  max-width: 65ch;
+  margin-inline: auto;
+  padding: 0 var(--space-3) var(--space-5);
+  color: var(--muted);
+  font-size: 14px;
+}
+footer nav { margin-top: var(--space-1); }
+</style>
+</head>
+<body>
+<main>
+  <h1>気圧手帳 プライバシーポリシー</h1>
+  <p class="meta">施行日: 2026年7月11日</p>
+
+  <div class="summary">
+    <p>「気圧手帳」（以下「本アプリ」）は、個人開発者（以下「開発者」）が提供するiOSアプリです。本アプリはアカウント登録が不要で、開発者のサーバーを持たず、体調記録などのデータはすべてお使いの端末の中で完結します。開発者がユーザーの個人情報を収集・閲覧することはありません。</p>
+  </div>
+
+  <h2>1. 収集する情報</h2>
+  <p>本アプリが開発者に送信・収集する情報はありません。</p>
+  <ul>
+    <li>アカウント登録はありません（氏名・メールアドレス等を求めません）</li>
+    <li>行動追跡（トラッキング）は行いません</li>
+    <li>広告は表示せず、広告SDKも含みません</li>
+    <li>アクセス解析SDK等の外部解析ツールも使用していません</li>
+  </ul>
+
+  <h2>2. 端末内に保存される情報</h2>
+  <p>本アプリの利用にともない、次の情報がお使いの端末内に保存されます。</p>
+  <ul>
+    <li>体調の記録（頭痛のつらさ・症状・使った薬・メモなど）</li>
+    <li>薬プリセット（登録した薬の名前）</li>
+    <li>アプリの設定（地点、通知のオン/オフ、しきい値など）</li>
+    <li>気圧データのキャッシュ（取得済みの予報値・履歴）</li>
+  </ul>
+  <p>これらはすべて端末内、およびお使いのiCloudバックアップの範囲内にのみ保存されます。開発者がこれらのデータにアクセスすることは一切できません。端末の気圧センサーによる実測値も、表示のために端末内で処理されるのみで、外部に送信されません。</p>
+
+  <h2>3. 位置情報の取り扱い</h2>
+  <p>気象データの取得のため、ユーザーが選んだ地点の座標（または、任意で許可した場合は現在地の座標）を、Appleが提供するWeatherKit（Apple Weather）サービスに送信します。この送信はAppleのプライバシーポリシーに従って取り扱われます。</p>
+  <ul>
+    <li>位置情報の利用は気象データの取得のみが目的です</li>
+    <li>現在地の利用は任意で、許可しなくても地点を選んで利用できます</li>
+    <li>開発者のサーバーは存在せず、開発者が位置情報を受け取ることはありません</li>
+  </ul>
+  <p>Appleのプライバシーポリシー: <a href="https://www.apple.com/legal/privacy/jp/">https://www.apple.com/legal/privacy/jp/</a></p>
+
+  <h2>4. ヘルスケア（HealthKit）の取り扱い</h2>
+  <p>ユーザーが許可した場合に限り、本アプリで記録した頭痛をヘルスケアの「頭痛」症状として書き込みます。</p>
+  <ul>
+    <li>ヘルスケアのデータを読み取ることは一切ありません（書き込みのみ）</li>
+    <li>HealthKitのデータを第三者へ提供することはありません</li>
+    <li>HealthKitのデータを広告・マーケティング目的で使用することはありません</li>
+    <li>この連携は任意で、いつでもiOSの設定から取り消せます</li>
+  </ul>
+
+  <h2>5. 通知</h2>
+  <p>本アプリの通知は、端末内で生成されるローカル通知のみです。プッシュ通知用の外部サーバーは使用していません。通知はアプリ内の設定でいつでもオフにできます。</p>
+
+  <h2>6. 購入情報</h2>
+  <p>アプリ内課金（サブスクリプション・買い切り）の決済はAppleが処理します。開発者が氏名・住所・クレジットカード情報などの個人情報を受け取ることはありません。</p>
+
+  <h2>7. お問い合わせ</h2>
+  <p>本ポリシーに関するご質問は、次の連絡先までお寄せください。</p>
+  <p>メール: <a href="mailto:suzakusaiko@gmail.com">suzakusaiko@gmail.com</a></p>
+
+  <h2>8. 改定について</h2>
+  <p>本ポリシーを改定する場合は、本ページに改定後の内容と施行日を掲載する方法で告知します。重要な変更を行う場合は、アプリ内のお知らせ等でも案内します。改定後のポリシーは、本ページに掲載した施行日から効力を生じます。</p>
+</main>
+<footer>
+  <p>気圧手帳（個人開発者提供）</p>
+  <nav><a href="./support.html">サポートページ</a></nav>
+</footer>
+</body>
+</html>
